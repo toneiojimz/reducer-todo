@@ -1,4 +1,3 @@
-import { element } from "prop-types";
 
 export const initialState ={
     items: [{

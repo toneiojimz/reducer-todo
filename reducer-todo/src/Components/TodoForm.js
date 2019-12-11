@@ -1,4 +1,12 @@
 import React, { useState } from 'react';
+import styled from 'styled-components';
+
+const InNewClear = styled.div`
+    display:flex;
+    flex-direction: column;
+    width: 200px;
+    padding-top: 20px;
+`;
 
 
 const TodoForm = (props) => {
@@ -13,7 +21,7 @@ const TodoForm = (props) => {
   
 
     return (
-        <div>
+        <InNewClear>
             <input
                 className= ""
                 type= "text"
@@ -31,7 +39,7 @@ const TodoForm = (props) => {
                 <button onClick={() => dispatch({ type: "CLEAR_COMPLETED"})}>
                     Clear Completed
                 </button>
-        </div>
+        </InNewClear>
     );
 };
 
